@@ -254,11 +254,6 @@ require('lazy').setup({
     event = 'VimEnter',
     branch = '0.1.x',
     dependencies = {
-      'isak102/telescope-git-file-history.nvim',
-      dependencies = {
-        'nvim-lua/plenary.nvim',
-        'tpope/vim-fugitive',
-      },
       'nvim-lua/plenary.nvim',
       { -- If encountering errors, see telescope-fzf-native README for installation instructions
         'nvim-telescope/telescope-fzf-native.nvim',
@@ -846,6 +841,7 @@ require('lazy').setup({
   require 'kickstart.plugins.neo-tree',
   require 'kickstart.plugins.floaterm',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+  require 'kickstart.plugins.telescope-git-file-history',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
